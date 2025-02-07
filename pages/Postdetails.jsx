@@ -4,7 +4,7 @@ import React, { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import { toast } from 'react-toastify';
 
-function PostDetails() {
+function Postdetails() {
   const { blogid } = useParams();
   const [blog, setBlog] = useState(null);
   const [loading, setLoading] = useState(true);
@@ -123,4 +123,4 @@ function PostDetails() {
   );
 }
 
-export default PostDetails;
+export default Postdetails;
