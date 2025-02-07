@@ -31,7 +31,7 @@ function MyBlog() {
       }
   
       const response = await axios.post(
-        "https://myblog-backend-3hlz.onrender.com/api/blog/user-blogs",
+        "https://myblog-backend-8s6s.onrender.com/api/blog/user-blogs",
         {}, 
         {
           headers: {
@@ -90,7 +90,7 @@ function MyBlog() {
     }
   
     try {
-      const response = await axios.patch(`https://myblog-backend-3hlz.onrender.com/api/blog/update/${selectedBlog._id}`, formData, {
+      const response = await axios.patch(`https://myblog-backend-8s6s.onrender.com/api/blog/update/${selectedBlog._id}`, formData, {
         headers: {
           'Content-Type': 'multipart/form-data',
         },
@@ -122,7 +122,7 @@ function MyBlog() {
   
   const deleteBlog = async (blogid) => {
     try {
-      const response = await axios.delete('https://myblog-backend-3hlz.onrender.com/api/blog/remove', {
+      const response = await axios.delete('https://myblog-backend-8s6s.onrender.com/api/blog/remove', {
         data: { id: blogid }
       });
   
@@ -166,7 +166,7 @@ function MyBlog() {
                     <img 
                       className="p-3 rounded w-100 h-50"
                       variant="top"
-                      src={`https://myblog-backend-3hlz.onrender.com/images/${blog.image}`} 
+                      src={`https://myblog-backend-8s6s.onrender.com/images/${blog.image}`} 
                       alt={blog.title}
                     />
                     <div className="card-body d-flex flex-column">

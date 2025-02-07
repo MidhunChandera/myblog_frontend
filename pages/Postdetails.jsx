@@ -16,7 +16,7 @@ function Postdetails() {
   useEffect(() => {
     const fetchBlog = async () => {
       try {
-        const response = await axios.post(`https://myblog-backend-3hlz.onrender.com/api/blog/single/${blogid}`);
+        const response = await axios.post(`https://myblog-backend-8s6s.onrender.com/api/blog/single/${blogid}`);
         setBlog(response.data.blog);
         setComments(response.data.comments); 
       } catch (error) {
@@ -45,7 +45,7 @@ function Postdetails() {
       const userId = decodedToken.id; 
   
 
-      const response = await axios.post("https://myblog-backend-3hlz.onrender.com/api/comment/add", {
+      const response = await axios.post("https://myblog-backend-8s6s.onrender.com/api/comment/add", {
         comment,
         user: userId,  
         blogid: blog._id
@@ -86,7 +86,7 @@ function Postdetails() {
           <div className="col-md-8">
             <div className="card w-100 p-4 shadow rounded">
               <h2 className="text-center">{blog.title}</h2>
-              <img src={`http://localhost:3600/images/${blog.image}`} alt={blog.title} style={{ width: '100%', height: 'auto' }} />
+              <img src={`https://myblog-backend-8s6s.onrender.com/images/${blog.image}`} alt={blog.title} style={{ width: '100%', height: 'auto' }} />
               <p className="p-3 mt-2">{blog.content}</p>
             </div>
 

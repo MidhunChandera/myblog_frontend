@@ -12,7 +12,7 @@ function Home() {
   const [categoryFilter, setCategoryFilter] = useState("All");
   const [searchQuery, setSearchQuery] = useState("");
 
-  const apiUrl = "https://myblog-backend-3hlz.onrender.com/api/blog/get";
+  const apiUrl = "https://myblog-backend-8s6s.onrender.com/api/blog/get";
   const navigate = useNavigate();
 
   // Fetching blog data from the server
@@ -92,7 +92,7 @@ function Home() {
                     <Card.Img
                       className="p-3 rounded w-100 h-50"
                       variant="top"
-                      src={`https://myblog-backend-3hlz.onrender.com/images/${blog.image}`}
+                      src={`https://myblog-backend-8s6s.onrender.com/images/${blog.image}`}
                     />
                     <Card.Body className="d-flex flex-column">
                       <Card.Title>{blog.title || "Untitled"}</Card.Title>
