@@ -16,7 +16,7 @@ function PostDetails() {
   useEffect(() => {
     const fetchBlog = async () => {
       try {
-        const response = await axios.post(`http://localhost:3600/api/blog/single/${blogid}`);
+        const response = await axios.post(`https://myblog-backend-3hlz.onrender.com/api/blog/single/${blogid}`);
         setBlog(response.data.blog);
         setComments(response.data.comments); 
       } catch (error) {
@@ -45,7 +45,7 @@ function PostDetails() {
       const userId = decodedToken.id; 
   
 
-      const response = await axios.post("http://localhost:3600/api/comment/add", {
+      const response = await axios.post("https://myblog-backend-3hlz.onrender.com/api/comment/add", {
         comment,
         user: userId,  
         blogid: blog._id

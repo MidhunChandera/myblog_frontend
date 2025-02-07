@@ -30,7 +30,7 @@ function CreatePost() {
 
     try {
         const response = await axios.post(
-            "http://localhost:3600/api/blog/add",
+            "https://myblog-backend-3hlz.onrender.com/api/blog/add",
             formData,
             {
                 headers: {
