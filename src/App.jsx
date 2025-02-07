@@ -10,7 +10,7 @@ import About from "../pages/About"
 import { ToastContainer } from 'react-toastify'; // Import ToastContainer
 import 'react-toastify/dist/ReactToastify.css';
 
-import Postdetails from "../pages/postdetails"
+import Postdetails from "../pages/Postdetails"
 
 
 
